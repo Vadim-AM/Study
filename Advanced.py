@@ -12,5 +12,3 @@ def pascal(n):
 
 
 print(pascal(int(input())))
-
-# This string is only for watching changes
