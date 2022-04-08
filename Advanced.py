@@ -6,9 +6,11 @@ def pascal(n):
             if j == 0 or j == i:
                 temp_string.append(1)
             else:
-                temp_string.append(string[i - 1][j - 1] + string[i-1][j])
+                temp_string.append(string[i - 1][j - 1] + string[i - 1][j])
         string.append(temp_string)
-    return string[n]
+    return string
 
 
-print(pascal(int(input())))
+n = int(input())
+for k in pascal(n - 1):
+    print(*k)
