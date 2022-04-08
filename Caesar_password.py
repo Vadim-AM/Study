@@ -13,23 +13,23 @@ text = input('Введите текст:\n').split(' ')
 output_text = []
 
 
-def symbol_shift_eng(shifting):
+def symbol_shift_eng(shift):
     for i in text:
         if i in eng_upper_alphabet:
-            output_text.append(eng_upper_alphabet[eng_upper_alphabet.index(i) + shifting])
+            output_text.append(eng_upper_alphabet[eng_upper_alphabet.index(i) + shift])
         elif i in eng_lower_alphabet:
-            output_text.append(eng_lower_alphabet[eng_lower_alphabet.index(i) + shifting])
+            output_text.append(eng_lower_alphabet[eng_lower_alphabet.index(i) + shift])
         else:
             output_text.append(i)
     return print(*output_text, sep='')
 
 
-def symbol_shift_rus(shifting):
+def symbol_shift_rus(shift):
     for i in text:
         if i in rus_upper_alphabet:
-            output_text.append(rus_upper_alphabet[rus_upper_alphabet.index(i) + shifting])
+            output_text.append(rus_upper_alphabet[rus_upper_alphabet.index(i) + shift])
         elif i in rus_lower_alphabet:
-            output_text.append(rus_lower_alphabet[rus_lower_alphabet.index(i) + shifting])
+            output_text.append(rus_lower_alphabet[rus_lower_alphabet.index(i) + shift])
         else:
             output_text.append(i)
     return print(*output_text, sep='')
