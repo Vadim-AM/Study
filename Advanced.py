@@ -1,6 +1,6 @@
-def pascal(string_number):
+def pascal(fli):
     string = []
-    for i in range(string_number + 1):
+    for i in range(fli + 1):
         temp_string = []
         for j in range(i + 1):
             if j == 0 or j == i:
