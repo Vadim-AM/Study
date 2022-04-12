@@ -1,16 +1,18 @@
 def my_matrix(string_num, width):
-    zhnec = []
+    zhnets = []
     for _ in range(string_num):
-        zhnec.append([])
+        zhnets.append([])
         for _ in range(width):
-            zhnec[-1].append(input())
-    return  zhnec
+            zhnets[-1].append(input())
+    return zhnets
+
 
 def right_matrix(this_shit, length, width):
     for i in range(length):
         for j in range(width):
             print(this_shit[i][j], end=' ')
         print()
+
 
 def left_matrix(this_shit, length, width):
     for i in range(width):
