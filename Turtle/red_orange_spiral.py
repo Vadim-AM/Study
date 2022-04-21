@@ -8,6 +8,6 @@ for i in range(240):
     circle(i * 1.2)
     color('orange')
     circle(i)
-    left(3)
+    right(3)
     forward(3)
 done()
