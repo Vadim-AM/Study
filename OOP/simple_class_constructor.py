@@ -6,13 +6,11 @@ class Person:
         self.surname = surname
         self.birth_place = birth_place
         self.birth_year = birth_year
-        self.__class__.count += 1
-        print(f'Hello, {name}!!!')
+        Person.count += 1  # если нет атрибута объекта, то он берется из поля класса
+        print(f'Hello, {name}!!!\nYou are the {Person.count} user!')
 
-    def get_age(self, year):        return year - self.birth_year
-
-    def quantity(self):
-        print(f'Total count of persons: {self.count}')
+    def get_age(self, year):
+        return year - self.birth_year
 
     def print_info(self, n=1, year=2022):
         for i in range(n):
@@ -25,5 +23,5 @@ nadya = Person('Nadya', 'Makarova', 'Karamishevo', 1993)
 greg = Person('Grigory', 'Spirin', 'Karamishevo', 1996)
 nastya = Person('Nastya', 'Ogievich', 'Ozersk', 1999)
 
-Person.quantity(self=Person)
+# Person.quantity(self=Person)
 # nadya.print_info(3, year=2005)
